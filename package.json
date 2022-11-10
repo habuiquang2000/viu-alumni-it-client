@@ -1,4 +1,5 @@
 {
+  "homepage": "https://habuiquang2000.github.io/viu-alumni-it-client",
   "name": "viu-alumni-it-client",
   "version": "0.1.0",
   "private": true,
@@ -24,6 +25,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "start:web": "npm install -g serve & serve -s build",
     "build": "craco build",
@@ -62,6 +65,7 @@
     "autoprefixer": "^9.8.6",
     "craco-alias": "^3.0.1",
     "draft-js": "^0.11.7",
+    "gh-pages": "^4.0.0",
     "postcss": "^7.0.36",
     "react-draft-wysiwyg": "^1.14.7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14"
